@@ -1,0 +1,1 @@
+# SwadeshNess-words-list
