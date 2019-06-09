@@ -10,4 +10,4 @@ jobs:
       TERM: dumb
     steps:
       - checkout
-      - deploy: java -jar couperose-0.1.0-SNAPSHOT-standalone.jar
+      - run: java -jar couperose-0.1.0-SNAPSHOT-standalone.jar
