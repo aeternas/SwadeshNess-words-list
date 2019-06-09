@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: aeternas/swadeshness-couperose:$CIRCLE_BRANCH
+    branches:
+      only:
+        - master
+    working_directory: ~/repo
+
+    environment:
+      JVM_OPTS: -Xmx3200m
+      TERM: dumb
+    steps:
+      - run: java -jar couperose-0.1.0-SNAPSHOT-standalone.jar
