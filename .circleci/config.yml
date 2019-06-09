@@ -9,5 +9,4 @@ jobs:
       JVM_OPTS: -Xmx3200m
       TERM: dumb
     steps:
-      - checkout
       - run: java -jar couperose-0.1.0-SNAPSHOT-standalone.jar
