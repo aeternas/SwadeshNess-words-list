@@ -6,8 +6,8 @@ jobs:
     branches:
       only:
         - master
-    working_directory: ~/repo
-
+        - development
+    working_directory: /home/circleci/repo
     environment:
       JVM_OPTS: -Xmx3200m
       TERM: dumb
