@@ -3,6 +3,9 @@ jobs:
   build:
     docker:
       - image: aeternas/swadeshness-couperose:$CIRCLE_BRANCH
+    branches:
+      only:
+        - master
     working_directory: ~/repo
 
     environment:
