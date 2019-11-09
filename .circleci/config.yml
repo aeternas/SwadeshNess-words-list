@@ -1,12 +1,13 @@
 aliases:
   - &docker_image
     - image: aeternas/swadeshness-couperose:$CIRCLE_BRANCH
-  - &working_directory /home/circleci/repo
+  - &working_directory
+    - working_directory: /home/circleci/repo
 version: 2.1
 jobs:
   build:
     docker: *docker_image
-    working_directory: *working_directory
+    *working_directory
     environment:
       JVM_OPTS: -Xmx3200m
       TERM: dumb
